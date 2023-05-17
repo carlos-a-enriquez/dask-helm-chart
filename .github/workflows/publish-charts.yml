@@ -39,7 +39,7 @@ jobs:
           charts_dir: "."
           charts_url: https://carlos-a-enriquez.github.io/helm_charts/
           linting: "off"
-          chart_version: ${{ steps.get_version.outputs.VERSION }}
+          # chart_version: ${{ steps.get_version.outputs.VERSION }}
           owner: carlos-a-enriquez
           repository: helm_charts
           branch: helm_G_page
