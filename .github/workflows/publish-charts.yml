@@ -35,8 +35,13 @@ jobs:
       - name: Publish Helm charts
         uses: stefanprodan/helm-gh-pages@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: "."
-          charts_url: https://helm.dask.org/
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
+          charts_dir: "./dask"
+          charts_url: https://carlos-a-enriquez.github.io/helm_charts/
           linting: "off"
           chart_version: ${{ steps.get_version.outputs.VERSION }}
+          owner: carlos-a-enriquez
+          repository: helm_charts
+          branch: helm_G_page
+          target_dir: ./dask
+
